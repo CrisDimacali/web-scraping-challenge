@@ -103,9 +103,9 @@ def hemisphere_imgs():
 def scrape_info():
     
     mars_info = {}
-    # nasa_news = news()
-    # mars_info["title"] = mars_news[0]
-    # mars_info["par"] = mars_news[1]
+    nasa_news = news()
+    mars_info["title"] = nasa_news[0]
+    mars_info["par"] = nasa_news[1]
     mars_info["featured_image_url"] = featured_mars()
     mars_info["mars_weather"] = mars_twitter()
     mars_info["mars_table"] = mars_facts_table()
